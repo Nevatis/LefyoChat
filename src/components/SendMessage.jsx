@@ -36,9 +36,9 @@ const SendMessage = () => {
   return (
     <div className="SendMessageColor fixed bottom-0 w-full py-10 shadow-lg">
     <form onSubmit={handleSendMessage} className="px-2 containerWrap flex">
-        <input value={value} onChange={e => setValue(e.target.value)} className="input SendMessageBox text-white w-full focus:outline-none bg-gray-100 rounded-r-none" type="text" />
-        <button type="submit" className="w-auto bg-purple-500 text-white rounded-r-lg px-5 text-sm">Gönder</button>
-    </form>
+        <input placeholder="Bir mesaj gönder!" value={value} onChange={e => setValue(e.target.value)} className="input SendMessageBox group text-white w-full focus:outline-none bg-gray-100 rounded-r-none" type="text" />
+        <button type="submit" className="w-auto bg-red-500 text-white rounded-r-lg px-5 text-sm">Gönder</button>
+        </form>
     </div>
   )
 }
